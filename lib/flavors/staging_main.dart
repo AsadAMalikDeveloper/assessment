@@ -10,8 +10,8 @@ main() {
       Endpoints.method: "save"
     }
     ..theme = ThemeData.light().copyWith(
-        primaryColor: Colors.yellow,
+        primaryColor: Colors.deepOrange,
         appBarTheme: ThemeData.light()
             .appBarTheme
-            .copyWith(backgroundColor: Colors.yellowAccent)));
+            .copyWith(backgroundColor: Colors.deepOrangeAccent)));
 }
