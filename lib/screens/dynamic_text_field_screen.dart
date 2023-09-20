@@ -67,7 +67,7 @@ class _DynamicEditTextScreenState extends State<DynamicEditTextScreen> {
         child: Column(
           children: [
             Expanded(
-              child: ListView.builder(
+              child: editTextValues.isEmpty?Center(child: Text('There is no textfield add from below button',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),):ListView.builder(
                 itemCount: editTextValues.length,
                 itemBuilder: (context, index) {
                   return Padding(
