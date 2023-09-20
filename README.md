@@ -29,3 +29,7 @@ flutter build apk --flavor qa -t lib/flavors/qa_main.dart
 For Staging APK:
 
 flutter build apk --flavor staging -t lib/flavors/staging_main.dart
+
+
+VIDEO URL:
+https://drive.google.com/file/d/128NyUcpmViWnlXvHTVqNGJ7mMhLaM2QY/view?usp=drive_link
