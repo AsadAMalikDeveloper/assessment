@@ -1,16 +1,31 @@
 # assesment
 
-A new Flutter project.
+After successfully clone from version control you have to add configuration
 
-## Getting Started
+1. click on edit configuration
+2.Click on + button on left side of dialog box
+3. choose flutter
+4. enter name like Staging,QA,Prodution
+5. Enter Dart Entrypoint 
+for Production:
+~~projectFolder\lib\flavors\production_main.dart
+for QA:
+~~projectFolder\lib\flavors\qa_main.dart
+for Staging:
+~~projectFolder\lib\flavors\staging_main.dart
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+FOR APK generate
+Run this command on project Terminal
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+For Production APK:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+flutter build apk --flavor production -t lib/flavors/production_main.dart
+
+For QA APK:
+
+flutter build apk --flavor qa -t lib/flavors/qa_main.dart
+
+For Staging APK:
+
+flutter build apk --flavor staging -t lib/flavors/staging_main.dart
